@@ -1,2 +1,5 @@
-package weck3;public class test {
+package weck3;
+
+public class test {
+
 }
