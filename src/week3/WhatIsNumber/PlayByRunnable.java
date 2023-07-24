@@ -1,4 +1,4 @@
-package weck3.WhatIsNumber;
+package week3.WhatIsNumber;
 
 public class PlayByRunnable implements Runnable {
 

@@ -1,4 +1,4 @@
-package weck3.EvenOdd;
+package week3.EvenOdd;
 
 public class TestThread {
     public static void main(String[] args) throws InterruptedException {

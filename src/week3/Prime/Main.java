@@ -1,4 +1,4 @@
-package weck3.Prime;
+package week3.Prime;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException{

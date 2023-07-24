@@ -1,4 +1,4 @@
-package weck3;
+package week3;
 
 public class AppRacingCar {
     protected static int DISTANCE = 100;

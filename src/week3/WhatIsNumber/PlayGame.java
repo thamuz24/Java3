@@ -1,4 +1,4 @@
-package weck3.WhatIsNumber;
+package week3.WhatIsNumber;
 
 import java.util.Scanner;
 

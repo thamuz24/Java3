@@ -1,4 +1,4 @@
-package weck3.Prime;
+package week3.Prime;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package weck3.Prime;
+package week3.Prime;
 
 public class LazyPrimeFactorization implements Runnable{
     @Override

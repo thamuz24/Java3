@@ -1,7 +1,7 @@
-package weck3;
+package week3;
 import java.util.Random;
 
-import static weck3.AppRacingCar.*;
+import static week3.AppRacingCar.*;
 
 public class Car implements Runnable{
     private String name;
