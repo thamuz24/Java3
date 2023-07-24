@@ -1,18 +1,15 @@
 package week4.practice.useTCP;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
 public class Client implements Runnable{
-    public static void main(String[] args) throws IOException {
-    }
-
     @Override
     public void run() {
         try {
-
             String severIP = "127.0.0.1";
             int severPort = 8080;
             Socket socket = new Socket(severIP, severPort);
@@ -20,7 +17,11 @@ public class Client implements Runnable{
             OutputStream outputStream = socket.getOutputStream();
             String message = "Hello thang l";
             outputStream.write(message.getBytes());
-
+            InputStream input = socket.getInputStream();
+            int byteInput;
+            while ((byteInput = input.read()) != -1) {
+                System.out.print(Character.toString(byteInput));
+            }
             socket.close();
         } catch (UnknownHostException e) {
             throw new RuntimeException(e);

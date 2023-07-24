@@ -2,15 +2,11 @@ package week4.practice.useTCP;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
 public class Server implements Runnable{
-    public static void main(String[] args) throws IOException {
-
-    }
-
     @Override
     public void run() {
         try {
@@ -26,6 +22,10 @@ public class Server implements Runnable{
             int bytesRead = reader.read(buffer);
             String message = new String(buffer, 0, bytesRead);
             System.out.println("Received message from client: " + message);
+            OutputStream outputStream = socket.getOutputStream();
+
+            int response = 45;
+            outputStream.write(response);
 
             socket.close();
             serverSocket.close();
