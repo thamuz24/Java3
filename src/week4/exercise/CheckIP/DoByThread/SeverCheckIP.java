@@ -1,4 +1,4 @@
-package week4.exercise.CheckIP;
+package week4.exercise.CheckIP.DoByThread;
 
 import java.io.IOException;
 import java.io.InputStream;
